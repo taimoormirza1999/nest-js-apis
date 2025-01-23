@@ -7,7 +7,7 @@ export class AppController {
 
   @Get()
   getHello() {
-    return "hh"
+    return this.appService.getCats();
   }
   @Get('cat')
   findAll() {
